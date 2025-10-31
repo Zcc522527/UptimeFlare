@@ -5,16 +5,14 @@ const pageConfig: PageConfig = {
   title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/Zcc522527/UptimeFlare', label: 'GitHub' },
   ],
   // [OPTIONAL] Group your monitors
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🔐 Private': ['test_tcp_monitor'],
+    '🔐 Private': ['n8n'],
   },
   // [OPTIONAL] Set the path to your favicon, default to '/favicon.ico' if not specified
   favicon: '/favicon.ico',
@@ -36,13 +34,13 @@ const workerConfig: WorkerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'n8nl',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'n8nl sever',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'get',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://zcc522527-n8nl.hf.space/',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
